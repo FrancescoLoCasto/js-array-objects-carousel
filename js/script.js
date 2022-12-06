@@ -31,5 +31,10 @@ const images = [
    const imageCarousel = document.querySelectorAll(".carousel-image")
 
    for (let i = 0; i < images.length; i++){
-
+      imageCarousel.innerHTML +=
+      `
+      <div class="my_carousel-item">
+         <img src=${images[i].image} alt="${images[i].title}">
+      <div>
+      `
    }
