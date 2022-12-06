@@ -38,3 +38,13 @@ const images = [
       <div>
       `
    }
+
+      
+   preButton.addEventListener("click", function () {
+
+   })
+
+
+   nextButton.addEventListener("click", function () {
+      
+   })
