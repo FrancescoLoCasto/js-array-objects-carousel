@@ -28,3 +28,8 @@ const images = [
 
    const preButton = document.getElementById('buttonPrevious')
    const nextButton = document.getElementById('buttonNext')
+   const imageCarousel = document.querySelectorAll(".carousel-image")
+
+   for (let i = 0; i < images.length; i++){
+
+   }
