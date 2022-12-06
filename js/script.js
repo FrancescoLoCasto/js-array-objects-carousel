@@ -26,29 +26,35 @@ const images = [
    }
 ];
 
-   const imagesCarousel = document.getElementById("img");
+const imagesCarousel = document.getElementById("imgCarousel")
 
-   let indexImg = 1;
-   imagesCarousel.src = `./img/0${indexImg}.webp`
-
-
-   const preButton = document.getElementById('buttonPrevious')
-   const nextButton = document.getElementById('buttonNext')
+let indexImg = 1
+imagesCarousel.src = `./img/0${indexImg}.webp`
+const preButton = document.getElementById('buttonPrevious')
+const nextButton = document.getElementById('buttonNext')
 
 
-   // eventlist section
-
-      
+// eventlist section
+   
    preButton.addEventListener("click", function () {
+
       if (indexImg === 1) {
          indexImg = 5;
      } else {
       indexImg--;
      }
      imagesCarousel.src = `./img/0${indexImg}.webp`
+
    })
 
 
    nextButton.addEventListener("click", function () {
-      
+
+      if (indexImg >= 5) {
+         indexImg = 1;
+     } else {
+      indexImg++;
+     }
+     imagesCarousel.src = `./img/0${indexImg}.webp`
+
    })
