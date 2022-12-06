@@ -26,18 +26,17 @@ const images = [
    }
 ];
 
+   const imagesCarousel = document.getElementById("img");
+
+   let indexImg = 1;
+   imagesCarousel.src = `./img/0${indexImg}.webp`
+
+
    const preButton = document.getElementById('buttonPrevious')
    const nextButton = document.getElementById('buttonNext')
-   const imageCarousel = document.querySelectorAll(".carousel-image")
 
-   for (let i = 0; i < images.length; i++){
-      imageCarousel.innerHTML +=
-      `
-      <div class="my_carousel-item">
-         <img src=${images[i].image} alt="${images[i].title}">
-      <div>
-      `
-   }
+
+   // eventlist section
 
       
    preButton.addEventListener("click", function () {
