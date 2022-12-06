@@ -40,7 +40,12 @@ const images = [
 
       
    preButton.addEventListener("click", function () {
-
+      if (indexImg === 1) {
+         indexImg = 5;
+     } else {
+      indexImg--;
+     }
+     imagesCarousel.src = `./img/0${indexImg}.webp`
    })
 
 
